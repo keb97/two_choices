@@ -1,0 +1,10 @@
+<span>WHICH DO YOU CHOOSE?<span>
+
+<%= simple_form_for @left do |f| %>
+<%= f.hidden_field :vote, value: 1 %>
+<%= image_submit_tag('dog.png') %>
+<% end %>
+
+
+<%= button_to "", {controller: "rights", action: "create", :right => {"vote" => 1 }}, form_class: "Right" %>
+
