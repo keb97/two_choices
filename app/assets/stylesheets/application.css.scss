@@ -19,11 +19,18 @@ input {
 	width: 500px;
 	height: 250px;
 	border: none;
-	float: left;
 	margin: 30px;
 }
 
 body{
-	font-size: 55px;
+	font-size: 45px;
 	text-align: center;
+}
+
+#left{
+	float:left;
+}
+
+#right{
+	float:right;
 }

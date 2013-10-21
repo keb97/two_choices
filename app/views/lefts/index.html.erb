@@ -1,14 +1,18 @@
-<span>WHICH DO YOU CHOOSE?<span>
+<h3>WHICH DO YOU CHOOSE?</h3>
 
-<%= Left.sum(:vote) %>
-<%= Right.sum(:vote) %>
+<div id = "left">
+<%= Left.sum(:vote) %> votes
 
 
 <%= simple_form_for @left do |f| %>
 <%= f.hidden_field :vote, value: 1 %>
 <%= image_submit_tag('dog.png') %>
 <% end %>
+</div>
+<div id = "right">
 
+<%= Right.sum(:vote) %> votes
 
 <%= button_to "", {controller: "rights", action: "create", :right => {"vote" => 1 }}, form_class: "Right" %>
+</div>
 
